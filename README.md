@@ -9,3 +9,5 @@ App navigation with react-navigation
 ```
 yarn add react-navigation
 ```
+
+Using custom provider rather than Redux for global state management
