@@ -4,7 +4,7 @@ const BlogContext = React.createContext();
 
 export const BlogProvider = ({ children }) => {
   return (
-    <BlogContext.Provider>
+    <BlogContext.Provider value={5}>
       {children}
     </BlogContext.Provider>
   );
