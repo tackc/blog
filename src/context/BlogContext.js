@@ -7,7 +7,7 @@ export const BlogProvider = ({ children }) => {
 
   const addBlogPost = () => {
     setBlogPosts([...blogPosts, { title: `Blog Post #${blogPosts.length + 1}` }]);
-  }
+  };
   
   return (
     <BlogContext.Provider value={blogPosts}>
