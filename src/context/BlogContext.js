@@ -9,7 +9,7 @@ export const BlogProvider = ({ children }) => {
   ]
   
   return (
-    <BlogContext.Provider value={5}>
+    <BlogContext.Provider value={blogPosts}>
       {children}
     </BlogContext.Provider>
   );
