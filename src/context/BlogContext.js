@@ -13,12 +13,12 @@ const blogReducer = (state, action) => {
 
 const addBlogPost = (dispatch) => {
   return (id) => {
-    dispatch({ type: 'add_blogpost' })
+    dispatch({ type: 'add_blogpost' });
   }
 };
 
 const deleteBlogPost = dispatch => {
-  dispatch({ type: 'delete_blogpost', payload: id })
+  dispatch({ type: 'delete_blogpost', payload: id });
 }
 
 export const { Context, Provider } = createDataContext(blogReducer, { addBlogPost, deleteBlogPost }, []);
