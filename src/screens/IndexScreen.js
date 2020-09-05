@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Button, TouchableOpacity } from 'react-native';
 import { Context } from '../context/BlogContext';
 // For ease of use, you can change import variable name at time of import
 // import { Context as blogContext } from '../context, BlogContext';
@@ -18,7 +18,9 @@ const { state, addBlogPost } = useContext(Context);
           return (
             <View style={styles.row}>
               <Text style={styles.title}>{item.title}</Text>
-              <Feather style={styles.icon} name="trash-2" />
+              <TouchableOpacity onPress={() => console.log(item.id)}>
+                <Feather style={styles.icon} name="trash-2" />
+              </TouchableOpacity>
             </View>
           )
         }}
