@@ -16,12 +16,14 @@ const { state, addBlogPost, deleteBlogPost } = useContext(Context);
         keyExtractor={blogPost => blogPost.title}
         renderItem={({ item }) => {
           return (
-            <View style={styles.row}>
-              <Text style={styles.title}>{item.title}</Text>
-              <TouchableOpacity onPress={() => deleteBlogPost(item.id)}>
-                <Feather style={styles.icon} name="trash-2" />
-              </TouchableOpacity>
-            </View>
+            <TouchableOpacity onPress={() => navigation.navigate('Show')}>
+              <View style={styles.row}>
+                <Text style={styles.title}>{item.title}</Text>
+                <TouchableOpacity onPress={() => deleteBlogPost(item.id)}>
+                  <Feather style={styles.icon} name="trash-2" />
+                </TouchableOpacity>
+              </View>
+            </TouchableOpacity>
           )
         }}
       />
