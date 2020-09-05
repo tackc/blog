@@ -1,7 +1,4 @@
-import React, { useReducer } from 'react';
 import createDataContext from './createDataContext';
-
-
 
 const blogReducer = (state, action) => {
   switch(action.type) {
