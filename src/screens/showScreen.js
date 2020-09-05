@@ -3,7 +3,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Context } from '../context/BlogContext';
 
 const ShowScreen = ({ navigation }) => {
-  (navigation.getParam('id'))
+  const { state } = useContext(Context);
+  
   return (
     <View>
       <Text>Show Screen</Text>
