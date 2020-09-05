@@ -16,9 +16,9 @@ const { state, addBlogPost } = useContext(Context);
         keyExtractor={blogPost => blogPost.title}
         renderItem={({ item }) => {
           return (
-            <View>
-              <Text>{item.title}</Text>
-              <Feather name="trash-2" />
+            <View style={styles.row}>
+              <Text style={styles.title}>{item.title}</Text>
+              <Feather style={styles.icon} name="trash-2" />
             </View>
           )
         }}
@@ -27,6 +27,21 @@ const { state, addBlogPost } = useContext(Context);
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: 15,
+    borderTopWidth: 1,
+    borderColor: 'gray',
+    paddingHorizontal: 15
+  },
+  title: {
+    fontSize: 20
+  },
+  icon: {
+    fontSize: 22
+  }
+});
 
 export default IndexScreen;
