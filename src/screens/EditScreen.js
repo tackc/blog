@@ -7,6 +7,8 @@ const EditScreen = ({ navigation }) => {
 
   const blogPost = state.find((blogPost) => blogPost.id === navigation.getParam('id'));
 
+  const [title, setTitle] = useState(blogPost.title)
+
   return (
     <View>
       <Text>Edit Screen - {navigation.getParam('id')}</Text>
