@@ -12,6 +12,7 @@ const [content, setContent] = useState('');
       <TextInput style={styles.input} value={title} onChangeText={(text) => setTitle(text)} />
       <Text style={styles.label}>Enter Content: </Text>
       <TextInput style={styles.input} value={content} onChangeText={(content) => setContent} />
+      <Button title="Add Blog Post" />
     </View>
   );
 };
