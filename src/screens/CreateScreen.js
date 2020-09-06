@@ -12,9 +12,9 @@ const { addBlogPost } = useContext(Context)
       <Text style={styles.label}>Enter Title:</Text>
       <TextInput style={styles.input} value={title} onChangeText={(text) => setTitle(text)} />
       <Text style={styles.label}>Enter Content: </Text>
-      <TextInput style={styles.input} value={content} onChangeText={(content) => setContent} />
-      <Button 
-        title="Add Blog Post" 
+      <TextInput style={styles.input} value={content} onChangeText={(text) => setContent(text)} />
+      <Button
+        title="Add Blog Post"
         onPress={() => addBlogPost(title, content)}
       />
     </View>
