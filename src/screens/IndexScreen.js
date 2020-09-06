@@ -31,7 +31,7 @@ const { state, addBlogPost, deleteBlogPost } = useContext(Context);
   );
 };
 
-IndexScreen.navigationOptions = () => {
+IndexScreen.navigationOptions = ({ navigation }) => {
   return {
     headerRight: () => (
       <TouchableOpacity onPress={() => navigation.navigate('Create')}>
