@@ -12,7 +12,7 @@ const blogReducer = (state, action) => {
 };
 
 const addBlogPost = (dispatch) => {
-  return (id) => {
+  return (title, content) => {
     dispatch({ type: 'add_blogpost' });
   }
 };
