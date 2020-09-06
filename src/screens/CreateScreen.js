@@ -16,6 +16,16 @@ const [content, setContent] = useState('');
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  input: {
+    fontSize: 18,
+    borderWidth: 1,
+    borderColor: 'black'
+  },
+  label: {
+    fontSize: 20,
+    marginBottom: 10
+  }
+});
 
 export default CreateScreen;
