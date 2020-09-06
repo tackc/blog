@@ -8,10 +8,10 @@ const [content, setContent] = useState('');
 
   return (
     <View>
-      <Text>Enter Title:</Text>
-      <TextInput value={title} onChangeText={(text) => setTitle(text)} />
-      <Text>Enter Content: </Text>
-      <TextInput value={content} onChangeText={(content) => setContent} />
+      <Text style={styles.label}>Enter Title:</Text>
+      <TextInput style={styles.input} value={title} onChangeText={(text) => setTitle(text)} />
+      <Text style={styles.label}>Enter Content: </Text>
+      <TextInput style={styles.input} value={content} onChangeText={(content) => setContent} />
     </View>
   );
 };
