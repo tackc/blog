@@ -5,7 +5,7 @@ import { Context } from '../context/BlogContext';
 const CreateScreen = ({ navigation }) => {
 const [title, setTitle] = useState('');
 const [content, setContent] = useState('');
-const { addBlogPost } = useContext(Context)
+const { addBlogPost } = useContext(Context);
 
   return (
     <View>
