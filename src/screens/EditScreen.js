@@ -12,7 +12,8 @@ const EditScreen = ({ navigation }) => {
 
   return (
     <View>
-      <Text>Edit Screen - {navigation.getParam('id')}</Text>
+      <Text>Edit Title:</Text>
+      <TextInput value={title} onChange={(newTitle => setTitle(newTitle))} />
     </View>
   );
 };
