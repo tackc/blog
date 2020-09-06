@@ -13,7 +13,7 @@ const blogReducer = (state, action) => {
 
 const addBlogPost = (dispatch) => {
   return (title, content) => {
-    dispatch({ type: 'add_blogpost' });
+    dispatch({ type: 'add_blogpost', payload: { title, content } });
   }
 };
 
