@@ -13,6 +13,7 @@ const BlogPostForm = ({ onSubmit }) => {
       <TextInput style={styles.input} value={content} onChangeText={(text) => setContent(text)} />
       <Button
         title="Save Blog Post"
+        onPress={() => onSubmit(title, content)}
       />
     </View>
   );
