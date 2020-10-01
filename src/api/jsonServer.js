@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { NGROK } from '../../.env'
+import { NGROK_URL } from '../../.env'
 
 export default axios.create({
   // This will change every 8 hours or whenever the server restarts
-  baseURL: NGROK
+  baseURL: NGROK_URL
 });
